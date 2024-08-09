@@ -1,8 +1,87 @@
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#list-table').DataTable();
+  });
+</script>
+
+<style>
+  /* Estilo básico de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0a0a0a;
+    color: #9fa6b2;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Encabezado de la tabla */
+table thead tr {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Bordes de las celdas */
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #343a40;
+}
+
+/* Filas alternas */
+table tbody tr {
+    border-bottom: 1px solid #343a40;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #1a1a1a;
+}
+
+/* Hover sobre las filas */
+table tbody tr:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Estilo de links en la tabla */
+table a {
+    color: #9fa6b2;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Estilo de las celdas del pie de tabla */
+table tfoot tr {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+}
+
+table tfoot tr td {
+    padding: 10px;
+}
+
+</style>
+
 <p><img src="Lectura/Attachments/photo-1548445929-4f60a497f851.jpeg" alt=""></p>
 <p>📕</p>
 <h1 id="lista-de-lectura">Lista de lectura</h1>
 <p>Registro de libros, artículos y otro contenido interesante que he leído o estoy leyendo. El registro lo he empezado desde el 2 de Septiembre del 2023. He agregado algunos libros a medida que voy recordando lo que ya leí que me parece lo más importante, esos son los que no tienen fecha de Terminado aunque tienen estado Terminado.</p>
-<table>
+<table class="list-table" id="list-table">
 <thead>
 <tr>
 <th>Nombre</th>
