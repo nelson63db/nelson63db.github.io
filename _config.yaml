@@ -3,4 +3,4 @@ description: "Listado de las cosas que voy leyendo."
 baseurl: ""
 url: "https://nelson63db.github.io"
 theme: jekyll-theme-hacker
-markdown: kramdown
+markdown: GFM
