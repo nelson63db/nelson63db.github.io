@@ -2,5 +2,5 @@ title: "Lista de Nelson"
 description: "Listado de las cosas que voy leyendo."
 baseurl: ""
 url: "https://nelson63db.github.io"
-theme: minima
+theme: jekyll-theme-hacker
 markdown: kramdown
